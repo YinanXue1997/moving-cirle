@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>DFS 3</h1>
+<div class="circle"></div>
+
+</body>
+<style type="text/css">.circle{
+  background:red;
+  width:100px;
+  height:100px;
+    border-radius:50%;
+  position:absolute;
+}</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script type="">var string = "hello";
+
+var boolean = true;
+
+var circle = $(".circle");
+
+console.log(circle);
+
+
+
+$(document).on('mousemove', function(event){
+  var pageX = event.pageX;
+  var pageY = event.pageY;
+  console.log(pageX + ":" + pageY);
+  circle.css({
+    "opacity": (pageX/window.innerWidth),
+    "left": pageX+"px",
+    "top": pageY+"px"
+
+   });
+});
+</script>
+</html>
